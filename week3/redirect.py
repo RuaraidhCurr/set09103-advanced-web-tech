@@ -38,4 +38,4 @@ def static_examples_img():
     return start+url+end, 200
 
 if __name__ == "__main__":
-    app.run("127.0.0.1", debug=Ture)
+    app.run("127.0.0.1", debug=True)

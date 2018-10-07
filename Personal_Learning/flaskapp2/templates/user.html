@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    <script>type="text/javascript"; src="{{ url_for('static', filename='java.js') }}"</script>
+    <title>Profile</title>
+</head>
+<body>
+    <!-- the curlybraces with "%" inbatween them
+         basically allows python code running in the html page -->
+{% if user %}
+    <h1>Hello {{ user }}</h1>
+{% else %}
+    <h1>Please log in</h1>
+{% endif %}
+
+
+</body>
+</html>

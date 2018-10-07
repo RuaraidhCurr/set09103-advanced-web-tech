@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    <script>type="text/javascript"; src="{{ url_for('static', filename='java.js') }}"</script>
+    <title>Shopping</title>
+</head>
+<body>
+    <ul>
+        <!-- For loops through food and stores each itteraction in item! -->
+        {% for item in food %}
+        <!-- places data stored in "item" from each itteration of the loop in the list item -->
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

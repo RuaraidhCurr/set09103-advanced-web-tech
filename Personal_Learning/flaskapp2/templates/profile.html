@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is how you link your static files to your html templates when using python flask
+        Must ue a folder named static -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    <script>type="text/javascript"; src="{{ url_for('static', filename='java.js') }}"</script>
+    <title>Profile</title>
+</head>
+<body>
+    <!-- Double brackets allows the html to grab the variable from python
+         (from the address line in this case) -->
+    <h1>wagwan:  {{ username }}</h1>
+</body>
+</html>
