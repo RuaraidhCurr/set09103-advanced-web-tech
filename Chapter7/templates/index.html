@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% if user.name %}
+<h1>Hello! {{ user.name }}</h1>
+{% else %}
+<h1>Hello from napier!</h1>
+{% endif %}
+
+{% if user.age %}
+<p>is {{user.age}} years old</p>
+{% endif %}
+
+
+{% endblock %}
