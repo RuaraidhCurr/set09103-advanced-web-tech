@@ -13,7 +13,10 @@ def root():
 @app.route("/index/<name>/<age>")
 def index(name=None, age=None):
     user = {"name": name, "age": age}
-    return render_template("index.html", user=user)
+    currentusers = [{"name": "bob", "age": "34"},
+                    {"name": "jeff", "age": "23"}, 
+                    {"name": "jessica", "age": "54"}]
+    return render_template("index.html", user=user, currentusers=currentusers)
 
 if __name__=="__main__":
     app.run(debug=True)

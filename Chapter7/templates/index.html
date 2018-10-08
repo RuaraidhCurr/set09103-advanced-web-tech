@@ -12,5 +12,9 @@
 <p>is {{user.age}} years old</p>
 {% endif %}
 
+<h1>Current Users</h1>
+{% for x in currentusers %}
+<p>{{ x.name }} is {{ x.age }} years old</p>
+{% endfor %}
 
 {% endblock %}
